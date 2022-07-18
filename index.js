@@ -1,8 +1,25 @@
 // 1
 // Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+
 function vowel_count(str1) {
-  //write your code here
+  const vowels = ["a", "e", "i", "o", "u"];
+  //let vowels = "aeiou";
+  let count = 0;
+  for (let i = 0; i < str1.length; i++) {
+    if (vowels.includes(str1[i].toLowerCase())) {
+      count++;
+    }
+  }
+  return count;
 }
+// loop through string to test if each character is a vowel
+//for (let letter of str1.toLowerCase()) {
+// if (vowels.includes(letter)) {
+//  count++;
+// }
+// }
+// return number of vowels
+
 console.log(vowel_count("The quick brown fox"));
 
 //2
